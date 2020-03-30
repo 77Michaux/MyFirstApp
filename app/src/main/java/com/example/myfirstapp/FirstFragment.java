@@ -36,6 +36,8 @@ public class FirstFragment extends Fragment {
         count++;
         // Display the new value in the text view.
         showCountTextView.setText(count.toString());
+
+        showList();
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
@@ -64,5 +66,11 @@ public class FirstFragment extends Fragment {
                 countMe(view);
             }
         });
+
+    }
+
+    private void showList(){
+
+        //Affichage de la liste
     }
 }
