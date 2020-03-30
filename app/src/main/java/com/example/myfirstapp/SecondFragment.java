@@ -26,15 +26,6 @@ public class SecondFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Integer count = SecondFragmentArgs.fromBundle(getArguments()).getMyArg();
-        Random random = new java.util.Random();
-        Integer randomNumber = 0;
-        if (count > 0) {
-            randomNumber = random.nextInt(count + 1);
-        }
-
-        TextView randomView = view.getRootView().findViewById(R.id.textview_random);
-        randomView.setText(randomNumber.toString());
 
         view.findViewById(R.id.button_second).setOnClickListener(new View.OnClickListener() {
             @Override
